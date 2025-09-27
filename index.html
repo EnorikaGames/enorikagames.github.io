@@ -3,20 +3,12 @@
   <head>
     <title>Enorika - Игровая студия</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Подключение CSS -->
-    <style>
-      body {
-        font-family: Arial;
-        text-align: center;
-        padding: 50px;
-      }
-    </style>
   </head>
   <body>
     <!-- ===== ШАПКА САЙТА ===== -->
     <header class="header">
-      <div class="header-container">
-        <!-- Логотип слева -->
+      <!-- Контейнер для логотипа (отдельно сверху) -->
+      <div class="logo-container">
         <div class="logo">
           <a href="index.html">
             <img
@@ -26,8 +18,10 @@
             />
           </a>
         </div>
+      </div>
 
-        <!-- Навигация справа -->
+      <!-- Контейнер для навигации (отдельно снизу) -->
+      <div class="nav-container">
         <nav class="nav">
           <a href="index.html" class="nav-link active">Главная</a>
           <a href="games.html" class="nav-link">Игры</a>
@@ -35,7 +29,6 @@
           <a href="contact.html" class="nav-link">Контакты</a>
         </nav>
       </div>
-      <!-- Закрыт header-container -->
     </header>
     <!-- Закрыт header -->
 

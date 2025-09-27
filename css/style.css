@@ -12,8 +12,8 @@
 
 main {
   color: #dededb;
-  margin-top: 100px; /* Добавляем отступ сверху чтобы контент не перекрывался шапкой */
-  min-height: calc(100vh - 200px); /* Чтобы контент занимал всю высоту экрана */
+  margin-top: 100px;
+  min-height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,23 +23,22 @@ main {
 }
 
 main a {
-  color: #fc8614; /* Оранжевый */
+  color: #fc8614;
   text-decoration: underline;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 main a:hover {
-  color: #fa6305; /* Более яркий оранжевый */
+  color: #fa6305;
   text-decoration: none;
   background: rgba(252, 134, 20, 0.1);
   padding: 2px 4px;
   border-radius: 3px;
 }
 
-/* Убедимся что параграфы видимые */
 main p {
-  color: #dededb; /* Светло-серый */
+  color: #dededb;
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 600px;
@@ -48,7 +47,7 @@ main p {
 
 .logo-container {
   display: flex;
-  justify-content: center; /* Горизонтальное центрирование */
+  justify-content: center;
   margin-bottom: 15px;
 }
 
@@ -57,20 +56,23 @@ main p {
 }
 
 .logo-img {
-  height: 140px;
+  height: 125px;
   width: auto;
   transition: transform 0.3s ease;
 }
 
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
 .logo-link {
   display: flex;
-  align-items: center; /* Вертикальное выравнивание по центру */
+  align-items: center;
   gap: 15px;
   text-decoration: none;
+  transition: transform 0.3s ease; /* Добавляем плавность для всей ссылки */
+}
+
+/* ОБЩИЙ ХОВЕР ДЛЯ ЛОГО И ТЕКСТА */
+.logo-link:hover .logo-img,
+.logo-link:hover .logo-text {
+  transform: scale(1.05);
 }
 
 .logo-text {
@@ -79,14 +81,10 @@ main p {
   color: #fc8614;
   font-size: 2.5rem;
   white-space: nowrap;
-  line-height: 1; /* Убираем лишние отступы */
+  line-height: 1;
+  transition: transform 0.3s ease; /* Плавность для текста */
 }
 
-.logo-text:hover {
-  transform: scale(1.05);
-}
-
-/* Остальные стили без изменений */
 .nav {
   display: flex;
   justify-content: center;
@@ -116,7 +114,6 @@ main p {
   box-shadow: 0 4px 12px rgba(252, 134, 20, 0.3);
 }
 
-/* ===== ОСНОВНЫЕ СТИЛИ ===== */
 body {
   font-family: "Exo 2", Arial, sans-serif;
   font-weight: 400;
@@ -147,46 +144,34 @@ h6 {
   color: #fc8614;
 }
 
-/* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ===== */
 @media (max-width: 768px) {
-  /* Шапка */
   .header {
     padding: 15px 0 10px 0;
   }
-
-  /* Логотип */
   .logo-img {
-    height: 80px; /* Уменьшил лого */
+    height: 70px;
   }
-
   .logo-text {
-    font-size: 1.5rem; /* Уменьшил текст */
-    white-space: normal; /* Разрешил перенос */
+    font-size: 1.5rem;
+    white-space: normal;
     text-align: center;
   }
-
   .logo-link {
-    flex-direction: column; /* Лого и текст в колонку */
+    flex-direction: column;
     gap: 5px;
   }
-
-  /* Навигация */
   .nav {
-    gap: 10px; /* Уменьшил расстояние */
-    flex-direction: column; /* или оставь row но с переносом */
+    gap: 10px;
+    flex-direction: column;
     align-items: center;
   }
-
   .nav-link {
-    padding: 8px 16px; /* Уменьшил кнопки */
+    padding: 8px 16px;
     font-size: 14px;
   }
-
-  /* Основной контент */
   body {
-    padding-top: 180px; /* Увеличил отступ для высокой шапки */
+    padding-top: 180px;
   }
-
   main {
     margin-top: 80px;
     min-height: calc(100vh - 150px);
@@ -194,21 +179,17 @@ h6 {
   }
 }
 
-/* Для очень маленьких экранов */
 @media (max-width: 480px) {
   .logo-img {
     height: 60px;
   }
-
   .logo-text {
     font-size: 1.2rem;
   }
-
   .nav-link {
     padding: 6px 12px;
     font-size: 13px;
   }
-
   body {
     padding-top: 160px;
   }

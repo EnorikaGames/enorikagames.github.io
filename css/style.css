@@ -10,6 +10,18 @@
   z-index: 1000;
 }
 
+main {
+  color: #dededb;
+  margin-top: 100px; /* Добавляем отступ сверху чтобы контент не перекрывался шапкой */
+  min-height: calc(100vh - 200px); /* Чтобы контент занимал всю высоту экрана */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
 .logo-container {
   display: flex;
   justify-content: center; /* Горизонтальное центрирование */
@@ -152,7 +164,9 @@ h6 {
   }
 
   main {
-    padding: 20px 15px; /* Уменьшил отступы */
+    margin-top: 80px;
+    min-height: calc(100vh - 150px);
+    padding: 0 15px;
   }
 }
 

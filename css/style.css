@@ -111,17 +111,67 @@ h6 {
   color: #fc8614;
 }
 
-/* Адаптивность */
+/* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ===== */
 @media (max-width: 768px) {
-  .logo-img {
-    height: 100px;
+  /* Шапка */
+  .header {
+    padding: 15px 0 10px 0;
   }
+
+  /* Логотип */
+  .logo-img {
+    height: 80px; /* Уменьшил лого */
+  }
+
+  .logo-text {
+    font-size: 1.5rem; /* Уменьшил текст */
+    white-space: normal; /* Разрешил перенос */
+    text-align: center;
+  }
+
+  .logo-link {
+    flex-direction: column; /* Лого и текст в колонку */
+    gap: 5px;
+  }
+
+  /* Навигация */
+  .nav {
+    gap: 10px; /* Уменьшил расстояние */
+    flex-direction: column; /* или оставь row но с переносом */
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 8px 16px; /* Уменьшил кнопки */
+    font-size: 14px;
+  }
+
+  /* Основной контент */
+  body {
+    padding-top: 180px; /* Увеличил отступ для высокой шапки */
+  }
+
+  main {
+    padding: 20px 15px; /* Уменьшил отступы */
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .logo-img {
+    height: 60px;
+  }
+
   .logo-text {
     font-size: 1.2rem;
-    white-space: normal;
   }
-  .logo-link {
-    flex-direction: column;
-    gap: 10px;
+
+  .nav-link {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  body {
+    padding-top: 160px;
   }
 }

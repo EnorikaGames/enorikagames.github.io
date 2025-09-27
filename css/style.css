@@ -1,4 +1,4 @@
-/* ===== ШАПКА С РАЗДЕЛЕННЫМИ КОНТЕЙНЕРАМИ ===== */
+/* ===== ШАПКА ===== */
 .header {
   background: #0b0705;
   padding: 20px 0 15px 0;
@@ -10,18 +10,15 @@
   z-index: 1000;
 }
 
-/* Контейнер для логотипа (сверху) */
 .logo-container {
   text-align: center;
   margin-bottom: 15px;
 }
 
-/* Контейнер для навигации (снизу) */
 .nav-container {
   text-align: center;
 }
 
-/* Логотип */
 .logo-img {
   height: 60px;
   width: auto;
@@ -32,7 +29,6 @@
   transform: scale(1.05);
 }
 
-/* Навигация */
 .nav {
   display: flex;
   justify-content: center;
@@ -41,9 +37,10 @@
 }
 
 .nav-link {
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: 600;
   color: #dededb;
   text-decoration: none;
-  font-weight: 600;
   transition: all 0.3s ease;
   padding: 10px 25px;
   border-radius: 6px;
@@ -61,12 +58,33 @@
   box-shadow: 0 4px 12px rgba(252, 134, 20, 0.3);
 }
 
-/* Основной контент */
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
 body {
-  font-family: Orbitron, sans-serif;
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: 400;
   margin: 0;
-  padding: 0;
-  padding-top: 140px;
+  padding: 140px 0 0 0;
   background: #0b0705;
   color: #dededb;
+}
+
+h1 {
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: 800;
+  color: #fc8614;
+}
+
+h2 {
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: 700;
+  color: #fc8614;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: 500;
+  color: #fc8614;
 }

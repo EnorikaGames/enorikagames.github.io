@@ -20,13 +20,28 @@
 }
 
 .logo-img {
-  height: 170px;
+  height: 140px;
   width: auto;
   transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
   transform: scale(1.05);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.logo-text {
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: 800;
+  color: #fc8614;
+  font-size: 1.5rem;
+  white-space: nowrap; /* текст в одну строку */
 }
 
 .nav {
@@ -87,4 +102,19 @@ h6 {
   font-family: "Exo 2", Arial, sans-serif;
   font-weight: 500;
   color: #fc8614;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 100px;
+  }
+  .logo-text {
+    font-size: 1.2rem;
+    white-space: normal;
+  }
+  .logo-link {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

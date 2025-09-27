@@ -11,7 +11,8 @@
 }
 
 .logo-container {
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
   margin-bottom: 15px;
 }
 
@@ -31,7 +32,7 @@
 
 .logo-link {
   display: flex;
-  align-items: inline-flex;
+  align-items: center; /* Вертикальное выравнивание по центру */
   gap: 15px;
   text-decoration: none;
 }
@@ -42,12 +43,14 @@
   color: #fc8614;
   font-size: 2.5rem;
   white-space: nowrap;
+  line-height: 1; /* Убираем лишние отступы */
 }
 
 .logo-text:hover {
   transform: scale(1.05);
 }
 
+/* Остальные стили без изменений */
 .nav {
   display: flex;
   justify-content: center;

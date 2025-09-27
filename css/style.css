@@ -22,6 +22,30 @@ main {
   padding: 0 20px;
 }
 
+main a {
+  color: #fc8614; /* Оранжевый */
+  text-decoration: underline;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+main a:hover {
+  color: #fa6305; /* Более яркий оранжевый */
+  text-decoration: none;
+  background: rgba(252, 134, 20, 0.1);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Убедимся что параграфы видимые */
+main p {
+  color: #dededb; /* Светло-серый */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
 .logo-container {
   display: flex;
   justify-content: center; /* Горизонтальное центрирование */

@@ -13,12 +13,12 @@
 
 main {
   color: #1f2933;
-  margin-top: 30px;
+  margin-top: 20px; /* ЖЕСТКО ФИКСИРУЕМ - было 80px */
   min-height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  /* justify-content: center — УДАЛЯЕМ ПОЛНОСТЬЮ */
   text-align: center;
   padding: 0 20px;
 }
@@ -119,7 +119,7 @@ body {
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 400;
   margin: 0;
-  padding: 110px 0 0 0;
+  padding: 100px 0 0 0; /* УМЕНЬШИЛИ до 100px (было 110px) */
   background: #ffffff;
   color: #1f2933;
 }
@@ -346,11 +346,6 @@ h6 {
   margin: 15px 0;
 }
 
-/* Убираем лишние отступы у main p */
-main p {
-  margin: 0 0 15px 0;
-}
-
 /* ===== АДАПТИВ ===== */
 @media (max-width: 768px) {
   .header {
@@ -378,12 +373,10 @@ main p {
     font-size: 14px;
   }
   body {
-    padding-top: 50px;
+    padding-top: 100px;
   }
   main {
-    margin-top: 60px;
-    min-height: calc(100vh - 120px);
-    padding: 0 15px;
+    margin-top: 10px; /* ЕЩЕ МЕНЬШЕ на мобилках */
   }
 
   /* Адаптив для контента на 768px */
@@ -419,7 +412,7 @@ main p {
     font-size: 13px;
   }
   body {
-    padding-top: 130px;
+    padding-top: 100px;
   }
   .btn-primary,
   .btn-secondary {
@@ -431,10 +424,6 @@ main p {
   .section h2 {
     font-size: 1.1rem;
     gap: 4px;
-  }
-
-  .process-text {
-    padding: 0;
   }
 
   .vacancy-item {

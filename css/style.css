@@ -224,6 +224,136 @@ h6 {
   margin: 30px 0;
 }
 
+/* ===== ОСНОВНЫЕ СТИЛИ ДЛЯ КОНТЕНТА ===== */
+.content-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+}
+
+.intro-text {
+  margin-top: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.section {
+  margin: 35px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.section h2 {
+  font-family: "Outfit", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1f2933;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+}
+
+.process-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6b7280;
+  background: #f4f6f8;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border-left: 4px solid #ff9f1a;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.quote {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #1f2933;
+  background: rgba(255, 159, 26, 0.1);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.accent {
+  color: #ff9f1a;
+  font-weight: 600;
+}
+
+.vacancies-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.vacancy-item {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6b7280;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vacancy-item:hover {
+  border-left-color: #ff9f1a;
+  padding-left: 15px;
+  color: #1f2933;
+}
+
+.vacancy-item strong {
+  color: #1f2933;
+  font-weight: 600;
+}
+
+.contacts {
+  margin: 40px 0 20px;
+  text-align: left;
+}
+
+.contacts p {
+  font-size: 1.1rem;
+  color: #1f2933;
+  margin: 12px 0;
+  text-align: left;
+}
+
+.contacts a {
+  color: #ff9f1a;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.contacts a:hover {
+  background: rgba(255, 159, 26, 0.1);
+  color: #ffc857;
+}
+
+.divider.light {
+  opacity: 0.5;
+  margin: 20px 0;
+}
+
+/* Убираем лишние отступы у main p */
+main p {
+  margin: 0 0 20px 0;
+}
+
 /* ===== АДАПТИВ ===== */
 @media (max-width: 768px) {
   .header {
@@ -258,6 +388,26 @@ h6 {
     min-height: calc(100vh - 150px);
     padding: 0 15px;
   }
+
+  /* Адаптив для контента на 768px */
+  .content-wrapper {
+    padding: 0 15px;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro-text,
+  .process-text,
+  .vacancy-item,
+  .contacts p {
+    font-size: 1rem;
+  }
+
+  .vacancy-item {
+    padding-left: 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -280,164 +430,17 @@ h6 {
     font-size: 14px;
   }
 
-  /* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ===== */
-  .content-wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
-    width: 100%;
-  }
-
-  .intro-text {
-    margin-top: 0; /* Убираем большой отступ */
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #6b7280;
-  }
-
-  .section {
-    margin: 35px 0;
-    text-align: left;
-    width: 100%;
-  }
-
+  /* Адаптив для контента на 480px */
   .section h2 {
-    font-family: "Outfit", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: #1f2933;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-align: left;
+    font-size: 1.2rem;
   }
 
   .process-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #6b7280;
-    background: #f4f6f8;
-    padding: 20px 25px;
-    border-radius: 12px;
-    border-left: 4px solid #ff9f1a;
-    text-align: left;
-    margin: 0 0 20px 0;
-  }
-
-  .quote {
-    display: inline-block;
-    margin-top: 12px;
-    font-weight: 500;
-    color: #1f2933;
-    background: rgba(255, 159, 26, 0.1);
-    padding: 6px 14px;
-    border-radius: 30px;
-    font-size: 1rem;
-  }
-
-  .accent {
-    color: #ff9f1a;
-    font-weight: 600;
-  }
-
-  /* ВАКАНСИИ - выравнивание по левому краю */
-  .vacancies-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Выравнивание по левому краю */
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 15px 20px;
   }
 
   .vacancy-item {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #6b7280;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    border-left: 2px solid transparent;
-    transition: all 0.3s ease;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .vacancy-item:hover {
-    border-left-color: #ff9f1a;
-    padding-left: 15px;
-    color: #1f2933;
-  }
-
-  .vacancy-item strong {
-    color: #1f2933;
-    font-weight: 600;
-  }
-
-  .contacts {
-    margin: 40px 0 20px;
-    text-align: left; /* Выровняли контакты влево */
-  }
-
-  .contacts p {
-    font-size: 1.1rem;
-    color: #1f2933;
-    margin: 12px 0;
-    text-align: left;
-  }
-
-  .contacts a {
-    color: #ff9f1a;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-  }
-
-  .contacts a:hover {
-    background: rgba(255, 159, 26, 0.1);
-    color: #ffc857;
-  }
-
-  .divider {
-    border: 0;
-    height: 2px;
-    background: #e6e8ec;
-    margin: 30px 0;
-    width: 100%;
-  }
-
-  .divider.light {
-    opacity: 0.5;
-    margin: 20px 0;
-  }
-
-  /* Убираем лишние отступы у main p, которые мешали */
-  main p {
-    margin: 0 0 20px 0; /* Убрали margin-top, оставили только снизу */
-  }
-
-  /* Для мобилок */
-  @media (max-width: 768px) {
-    .content-wrapper {
-      padding: 0 15px;
-    }
-
-    .section h2 {
-      font-size: 1.3rem;
-    }
-
-    .intro-text,
-    .process-text,
-    .vacancy-item,
-    .contacts p {
-      font-size: 1rem;
-    }
-
-    .vacancy-item {
-      padding-left: 8px;
-    }
+    padding-left: 6px;
+    font-size: 0.95rem;
   }
 }

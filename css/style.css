@@ -1,7 +1,7 @@
 /* ===== ШАПКА ===== */
 .header {
   background: #ffffff;
-  padding: 20px 0 15px 0;
+  padding: 15px 0 10px 0;
   border-bottom: 2px solid #e6e8ec;
   position: fixed;
   top: 0;
@@ -13,8 +13,8 @@
 
 main {
   color: #1f2933;
-  margin-top: 100px;
-  min-height: calc(100vh - 200px);
+  margin-top: 80px;
+  min-height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,16 +40,16 @@ main a:hover {
 
 main p {
   color: #6b7280;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
   max-width: 600px;
-  margin: 8px auto 20px auto;
+  margin: 0 0 15px 0;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .nav-container {
@@ -57,7 +57,7 @@ main p {
 }
 
 .logo-img {
-  height: 125px;
+  height: 90px;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -65,7 +65,7 @@ main p {
 .logo-link {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
@@ -79,7 +79,7 @@ main p {
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 800;
   color: #1f2933;
-  font-size: 2.5rem;
+  font-size: 2rem;
   white-space: nowrap;
   line-height: 1;
   transition: transform 0.3s ease;
@@ -99,9 +99,9 @@ main p {
   color: #6b7280;
   text-decoration: none;
   transition: all 0.3s ease;
-  padding: 10px 25px;
+  padding: 8px 20px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .nav-link:hover {
@@ -119,7 +119,7 @@ body {
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 400;
   margin: 0;
-  padding: 140px 0 0 0;
+  padding: 110px 0 0 0;
   background: #ffffff;
   color: #1f2933;
 }
@@ -129,6 +129,8 @@ h1 {
   font-weight: 700;
   color: #1f2933;
   letter-spacing: -0.02em;
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
 }
 
 h2 {
@@ -136,6 +138,8 @@ h2 {
   font-weight: 600;
   color: #1f2933;
   letter-spacing: -0.01em;
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
 }
 
 h3,
@@ -166,11 +170,11 @@ h6 {
   background: #ff9f1a;
   color: #ffffff;
   border: none;
-  padding: 12px 30px;
+  padding: 10px 25px;
   border-radius: 8px;
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(255, 159, 26, 0.2);
@@ -186,11 +190,11 @@ h6 {
   background: transparent;
   color: #3b82f6;
   border: 2px solid #3b82f6;
-  padding: 10px 25px;
+  padding: 8px 20px;
   border-radius: 8px;
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -226,7 +230,7 @@ h6 {
 
 /* ===== ОСНОВНЫЕ СТИЛИ ДЛЯ КОНТЕНТА ===== */
 .content-wrapper {
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: left;
   width: 100%;
@@ -234,13 +238,13 @@ h6 {
 
 .intro-text {
   margin-top: 0;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #6b7280;
 }
 
 .section {
-  margin: 25px 0;
+  margin: 20px 0;
   text-align: left;
   width: 100%;
 }
@@ -248,21 +252,21 @@ h6 {
 .section h2 {
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #1f2933;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   text-align: left;
 }
 
 .process-text {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #6b7280;
   text-align: left;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 
 .quote {
@@ -270,6 +274,7 @@ h6 {
   margin-top: 0;
   font-weight: 400;
   color: #6b7280;
+  font-size: 0.95rem;
 }
 
 .accent {
@@ -287,11 +292,11 @@ h6 {
 }
 
 .vacancy-item {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #6b7280;
-  margin-bottom: 15px;
-  padding-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   transition: all 0.3s ease;
   text-align: left;
@@ -301,7 +306,7 @@ h6 {
 
 .vacancy-item:hover {
   border-left-color: #ff9f1a;
-  padding-left: 15px;
+  padding-left: 12px;
   color: #1f2933;
 }
 
@@ -311,14 +316,14 @@ h6 {
 }
 
 .contacts {
-  margin: 40px 0 20px;
+  margin: 25px 0 15px;
   text-align: left;
 }
 
 .contacts p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #1f2933;
-  margin: 12px 0;
+  margin: 8px 0;
   text-align: left;
 }
 
@@ -343,13 +348,13 @@ h6 {
 
 /* Убираем лишние отступы у main p */
 main p {
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 
 /* ===== АДАПТИВ ===== */
 @media (max-width: 768px) {
   .header {
-    padding: 15px 0 10px 0;
+    padding: 12px 0 8px 0;
   }
   .logo-img {
     height: 70px;
@@ -369,36 +374,36 @@ main p {
     align-items: center;
   }
   .nav-link {
-    padding: 8px 16px;
+    padding: 6px 15px;
     font-size: 14px;
   }
   body {
-    padding-top: 180px;
+    padding-top: 140px;
   }
   main {
-    margin-top: 80px;
-    min-height: calc(100vh - 150px);
+    margin-top: 60px;
+    min-height: calc(100vh - 120px);
     padding: 0 15px;
   }
 
   /* Адаптив для контента на 768px */
   .content-wrapper {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   .section h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .intro-text,
   .process-text,
   .vacancy-item,
   .contacts p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .vacancy-item {
-    padding-left: 8px;
+    padding-left: 6px;
   }
 }
 
@@ -410,29 +415,30 @@ main p {
     font-size: 1.2rem;
   }
   .nav-link {
-    padding: 6px 12px;
+    padding: 5px 12px;
     font-size: 13px;
   }
   body {
-    padding-top: 160px;
+    padding-top: 130px;
   }
   .btn-primary,
   .btn-secondary {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 8px 18px;
+    font-size: 13px;
   }
 
   /* Адаптив для контента на 480px */
   .section h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    gap: 4px;
   }
 
   .process-text {
-    padding: 15px 20px;
+    padding: 0;
   }
 
   .vacancy-item {
-    padding-left: 6px;
-    font-size: 0.95rem;
+    padding-left: 5px;
+    font-size: 0.9rem;
   }
 }

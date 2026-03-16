@@ -261,23 +261,15 @@ h6 {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #6b7280;
-  background: #f4f6f8;
-  padding: 20px 25px;
-  border-radius: 12px;
-  border-left: 4px solid #ff9f1a;
   text-align: left;
   margin: 0 0 20px 0;
 }
 
 .quote {
-  display: inline-block;
-  margin-top: 12px;
-  font-weight: 500;
-  color: #1f2933;
-  background: rgba(255, 159, 26, 0.1);
-  padding: 6px 14px;
-  border-radius: 30px;
-  font-size: 1rem;
+  display: inline;
+  margin-top: 0;
+  font-weight: 400;
+  color: #6b7280;
 }
 
 .accent {

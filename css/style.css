@@ -1,17 +1,18 @@
 /* ===== ШАПКА ===== */
 .header {
-  background: #0b0705;
+  background: #ffffff;
   padding: 20px 0 15px 0;
-  border-bottom: 2px solid #fc8614;
+  border-bottom: 2px solid #e6e8ec;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
 main {
-  color: #dededb;
+  color: #1f2933;
   margin-top: 100px;
   min-height: calc(100vh - 200px);
   display: flex;
@@ -23,22 +24,22 @@ main {
 }
 
 main a {
-  color: #fc8614;
+  color: #ff9f1a;
   text-decoration: underline;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 main a:hover {
-  color: #fa6305;
+  color: #ffc857;
   text-decoration: none;
-  background: rgba(252, 134, 20, 0.1);
+  background: rgba(255, 159, 26, 0.08);
   padding: 2px 4px;
   border-radius: 3px;
 }
 
 main p {
-  color: #dededb;
+  color: #6b7280;
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 600px;
@@ -66,23 +67,23 @@ main p {
   align-items: center;
   gap: 15px;
   text-decoration: none;
-  transition: transform 0.3s ease; /* Добавляем плавность для всей ссылки */
+  transition: transform 0.3s ease;
 }
 
-/* ОБЩИЙ ХОВЕР ДЛЯ ЛОГО И ТЕКСТА */
 .logo-link:hover .logo-img,
 .logo-link:hover .logo-text {
   transform: scale(1.05);
 }
 
 .logo-text {
-  font-family: "Exo 2", Arial, sans-serif;
-  font-weight: 900;
-  color: #fc8614;
+  font-family: "Outfit", Arial, sans-serif;
+  font-weight: 800;
+  color: #1f2933;
   font-size: 2.5rem;
   white-space: nowrap;
   line-height: 1;
-  transition: transform 0.3s ease; /* Плавность для текста */
+  transition: transform 0.3s ease;
+  letter-spacing: -0.02em;
 }
 
 .nav {
@@ -93,9 +94,9 @@ main p {
 }
 
 .nav-link {
-  font-family: "Exo 2", Arial, sans-serif;
-  font-weight: 600;
-  color: #dededb;
+  font-family: "Outfit", Arial, sans-serif;
+  font-weight: 500;
+  color: #6b7280;
   text-decoration: none;
   transition: all 0.3s ease;
   padding: 10px 25px;
@@ -104,46 +105,126 @@ main p {
 }
 
 .nav-link:hover {
-  color: #fc8614;
-  background: rgba(252, 134, 20, 0.1);
+  color: #ff9f1a;
+  background: rgba(255, 159, 26, 0.05);
 }
 
 .nav-link.active {
-  background: linear-gradient(135deg, #fc8614, #fa6305);
-  color: #0b0705;
-  box-shadow: 0 4px 12px rgba(252, 134, 20, 0.3);
+  background: #ff9f1a;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 159, 26, 0.25);
 }
 
 body {
-  font-family: "Exo 2", Arial, sans-serif;
+  font-family: "Outfit", Arial, sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 140px 0 0 0;
-  background: #0b0705;
-  color: #dededb;
+  background: #ffffff;
+  color: #1f2933;
 }
 
 h1 {
-  font-family: "Exo 2", Arial, sans-serif;
-  font-weight: 800;
-  color: #fc8614;
+  font-family: "Outfit", Arial, sans-serif;
+  font-weight: 700;
+  color: #1f2933;
+  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-family: "Exo 2", Arial, sans-serif;
-  font-weight: 700;
-  color: #fc8614;
+  font-family: "Outfit", Arial, sans-serif;
+  font-weight: 600;
+  color: #1f2933;
+  letter-spacing: -0.01em;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Exo 2", Arial, sans-serif;
+  font-family: "Outfit", Arial, sans-serif;
   font-weight: 500;
-  color: #fc8614;
+  color: #1f2933;
 }
 
+/* ===== КАРТОЧКИ И ПОВЕРХНОСТИ ===== */
+.card {
+  background: #f4f6f8;
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: #e6e8ec;
+  border-color: #ff9f1a;
+}
+
+/* ===== КНОПКИ ===== */
+.btn-primary {
+  background: #ff9f1a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-family: "Outfit", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 159, 26, 0.2);
+}
+
+.btn-primary:hover {
+  background: #ffc857;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 159, 26, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-family: "Outfit", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+/* ===== СИСТЕМНЫЕ СООБЩЕНИЯ ===== */
+.success {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+.error {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.info {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+/* ===== РАЗДЕЛИТЕЛИ ===== */
+.divider {
+  border: 0;
+  height: 1px;
+  background: #e6e8ec;
+  margin: 30px 0;
+}
+
+/* ===== АДАПТИВ ===== */
 @media (max-width: 768px) {
   .header {
     padding: 15px 0 10px 0;
@@ -192,5 +273,10 @@ h6 {
   }
   body {
     padding-top: 160px;
+  }
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }

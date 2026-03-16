@@ -8,8 +8,53 @@
       rel="stylesheet"
     />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>Enorika - Игровая студия</title>
+    <title>Enorika - 404</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* временный фикс только для 404 страницы */
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+
+      header {
+        flex-shrink: 0;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin: 0 0 1rem 0;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+
+      p {
+        margin: 0;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        max-width: 600px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -24,9 +69,9 @@
     </header>
 
     <main>
-      <h1>404 - Страница не найдена</h1>
+      <h1>404 — страница не найдена</h1>
       <p>
-        Извините, такой страницы не существует. Вернитесь на
+        Такой страницы не существует. Вернитесь на
         <a href="index.html">главную</a>.
       </p>
     </main>

@@ -39,7 +39,7 @@ main a:hover {
 
 main p {
   color: #6b7280;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   max-width: 600px;
   margin: 0 0 15px 0;
@@ -137,7 +137,7 @@ h2 {
   font-weight: 600;
   color: #1f2933;
   letter-spacing: -0.01em;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   margin: 0 0 10px 0;
 }
 
@@ -222,7 +222,7 @@ h6 {
 /* ===== РАЗДЕЛИТЕЛИ ===== */
 .divider {
   border: 0;
-  height: 1px;
+  height: 2px;
   background: #e6e8ec;
   margin: 15px 0;
 }
@@ -237,7 +237,7 @@ h6 {
 
 .intro-text {
   margin-top: 25px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: #6b7280;
 }
@@ -251,7 +251,7 @@ h6 {
 .section h2 {
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: #1f2933;
   margin-bottom: 10px;
   display: flex;
@@ -261,7 +261,7 @@ h6 {
 }
 
 .process-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: #6b7280;
   text-align: left;
@@ -273,7 +273,7 @@ h6 {
   margin-top: 0;
   font-weight: 400;
   color: #6b7280;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .accent {
@@ -291,7 +291,7 @@ h6 {
 }
 
 .vacancy-item {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: #6b7280;
   margin-bottom: 10px;
@@ -320,7 +320,7 @@ h6 {
 }
 
 .contacts p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #1f2933;
   margin: 8px 0;
   text-align: left;
@@ -384,7 +384,7 @@ h6 {
   }
 
   .section h2 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 
   .intro-text,
@@ -392,7 +392,7 @@ h6 {
   .vacancy-item,
   .contacts p,
   .quote {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .vacancy-item {
@@ -422,7 +422,7 @@ h6 {
 
   /* Адаптив для контента на 480px */
   .section h2 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     gap: 4px;
   }
 
@@ -431,7 +431,7 @@ h6 {
   .vacancy-item,
   .contacts p,
   .quote {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .vacancy-item {

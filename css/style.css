@@ -13,12 +13,11 @@
 
 main {
   color: #1f2933;
-  margin-top: 20px; /* ЖЕСТКО ФИКСИРУЕМ - было 80px */
+  margin-top: 20px;
   min-height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center — УДАЛЯЕМ ПОЛНОСТЬЮ */
   text-align: center;
   padding: 0 20px;
 }
@@ -119,7 +118,7 @@ body {
   font-family: "Outfit", Arial, sans-serif;
   font-weight: 400;
   margin: 0;
-  padding: 100px 0 0 0; /* УМЕНЬШИЛИ до 100px (было 110px) */
+  padding: 100px 0 0 0;
   background: #ffffff;
   color: #1f2933;
 }
@@ -237,8 +236,8 @@ h6 {
 }
 
 .intro-text {
-  margin-top: 20;
-  font-size: 1.1rem;
+  margin-top: 25px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #6b7280;
 }
@@ -274,7 +273,7 @@ h6 {
   margin-top: 0;
   font-weight: 400;
   color: #6b7280;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .accent {
@@ -376,7 +375,7 @@ h6 {
     padding-top: 100px;
   }
   main {
-    margin-top: 10px; /* ЕЩЕ МЕНЬШЕ на мобилках */
+    margin-top: 10px;
   }
 
   /* Адаптив для контента на 768px */
@@ -385,14 +384,15 @@ h6 {
   }
 
   .section h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .intro-text,
   .process-text,
   .vacancy-item,
-  .contacts p {
-    font-size: 1.1rem;
+  .contacts p,
+  .quote {
+    font-size: 1rem;
   }
 
   .vacancy-item {
@@ -422,12 +422,19 @@ h6 {
 
   /* Адаптив для контента на 480px */
   .section h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     gap: 4px;
+  }
+
+  .intro-text,
+  .process-text,
+  .vacancy-item,
+  .contacts p,
+  .quote {
+    font-size: 1rem;
   }
 
   .vacancy-item {
     padding-left: 5px;
-    font-size: 1rem;
   }
 }
